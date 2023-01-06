@@ -1,4 +1,4 @@
-import { HashRouter as Router , Routes, Route } from "react-router-dom";
+import { BrowserRouter , Routes, Route } from "react-router-dom";
 import { Box } from "@mui/material";
 
 import {
@@ -11,17 +11,17 @@ import {
 } from "./components";
 
 const App = () => (
-  <HashRouter>
+  <BrowserRouter>
     <Box sx={{ backgroundColor: "#000" }}>
       <Navbar />
       <Routes>
-        <Route path="/gh-pages-url" exact element={<Feed />} />
-        <Route path="/gh-pages-url/video/:id" element={<VideoDetail />} />
-        <Route path="/gh-pages-url/channel/:id" element={<ChannelDetail />} />
-        <Route path="/gh-pages-url/search/:searchTerm" element={<SearchFeed />} />
+        <Route path="/" exact element={<Feed />} />
+        <Route path="/video/:id" element={<VideoDetail />} />
+        <Route path="/channel/:id" element={<ChannelDetail />} />
+        <Route path="/search/:searchTerm" element={<SearchFeed />} />
       </Routes>
     </Box>
-  </HashRouter>
+  </BrowserRouter>
 );
 
 export default App;
