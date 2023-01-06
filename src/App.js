@@ -1,4 +1,4 @@
-import { BrowserRouter , Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Box } from "@mui/material";
 
 import {
@@ -11,7 +11,7 @@ import {
 } from "./components";
 
 const App = () => (
-  <BrowserRouter basename="/youtube-clone">
+  <BrowserRouter>
     <Box sx={{ backgroundColor: "#000" }}>
       <Navbar />
       <Routes>
