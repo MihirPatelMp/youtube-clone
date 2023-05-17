@@ -1,6 +1,6 @@
 Hello Viewer; visit my fully functional YouTube clone, which is completely responsive for all devices.
 
-"(mihirpatelmp.github.io/youtube-clone/)"
+[Visit from here](mihirpatelmp.github.io/youtube-clone/)
 
 I made the front end of this site using React library and added icons and components from Material UI, a library of React.
 
